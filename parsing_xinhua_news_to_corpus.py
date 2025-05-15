@@ -75,11 +75,11 @@ def main():
     total_pages = first_page.get("content", {}).get("pageCount", 1)
     seen_titles = set()
 
-    with open("C:\\Users\\davin\\Desktop\\ukraine_news_xinhua.csv", "a", encoding="utf-8", newline="") as f:
+    with open("ukraine_news_xinhua.csv", "a", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["Заголовок", "URL", "Текст"])
 
-        for page in range(180, total_pages + 1):
+        for page in range(1, total_pages + 1):
             print(f"🔄 Обробка сторінки {page}/{total_pages}... ")
             data = fetch_news_page(keyword, page)
             if not data or "content" not in data or "results" not in data["content"]:
