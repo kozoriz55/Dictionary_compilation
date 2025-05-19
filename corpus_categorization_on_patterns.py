@@ -3,7 +3,7 @@ import pandas as pd
 import re
 import matplotlib.pyplot as plt
 # корпус
-with open("C:\\Users\\davin\\Desktop\\mil_corpus.txt", 'rt', encoding='utf-8') as f1:
+with open("mil_corpus.txt", 'rt', encoding='utf-8') as f1:
 	full_text = f1.read()
 # Шаблони для виявлення термінів
 templates = {
