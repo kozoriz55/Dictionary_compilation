@@ -63,7 +63,7 @@ plt.xlabel("Template Type")
 plt.ylabel("Quantity")
 plt.tight_layout()
 plt.grid(axis='y', linestyle='--', alpha=0.5)
-plt.savefig("C:\\Users\\davin\\Desktop\\Статистика_шаблонів.png", dpi=300, bbox_inches='tight')
+plt.savefig("Статистика_шаблонів.png", dpi=300, bbox_inches='tight')
 print("🖼️ Графік збережено як 'Статистика_шаблонів.png'")
 plt.show()
 # Збереження результатів на диск
@@ -80,7 +80,7 @@ df2_filtered = df2[df2["Термін"].isin(frequent_terms.index)].copy()
 df2_filtered["Кількість"] = df2_filtered["Термін"].map(frequent_terms)
 # 🔽 Сортуємо за спаданням
 df2_filtered.sort_values(by="Кількість", ascending=False, inplace=True)
-df2_filtered.to_csv("C:\\Users\\davin\\Desktop\\військові_терміни_частотні.csv", index=False, encoding='utf-8')
+df2_filtered.to_csv("військові_терміни_частотні.csv", index=False, encoding='utf-8')
 print("💾 Збережено 'військові_частотні_терміни.csv'")
 # 📊 Побудова графіка частотних термінів
 plt.figure(figsize=(10, 6))
@@ -94,6 +94,6 @@ plt.grid(axis='x', linestyle='--', alpha=0.5)
 # Встановлення шрифту для китайських ієрогліфів
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.tight_layout()
-plt.savefig("C:\\Users\\davin\\Desktop\\військові_терміни_частотні.png", dpi=300, bbox_inches='tight')
+plt.savefig("військові_терміни_частотні.png", dpi=300, bbox_inches='tight')
 print("🖼️ Графік збережено як 'військові_терміни_частотні.png'")
 plt.show()
