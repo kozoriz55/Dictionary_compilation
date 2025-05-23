@@ -84,7 +84,7 @@ def get_article_text(url):
         res = requests.get(url, headers=HEADERS, timeout=10)
         res.encoding = 'utf-8'
         soup = BeautifulSoup(res.text, 'html.parser')
-        selectors = ['#p-detail', '.article', '.main-content', '.content']
+        selectors = ['#detail', '#p-detail', '.article', '.main-content', '.content']
 
         for sel in selectors:
             block = soup.select_one(sel)
