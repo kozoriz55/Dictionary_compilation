@@ -142,7 +142,7 @@ def main():
         sheet_data = collect_news_for_category(nid, name)
         all_data.append(sheet_data)
 
-    save_all_to_excel(all_data, "C:\\Users\\davin\\Desktop\\xinhuanet_all_news.xlsx")
+    save_all_to_excel(all_data, "xinhuanet_all_news.xlsx")
 
 if __name__ == "__main__":
     main()
