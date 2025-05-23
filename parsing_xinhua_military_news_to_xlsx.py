@@ -14,7 +14,10 @@ HEADERS = {
 
 BASE_API = "http://qc.wa.news.cn/nodeart/list"
 CNT_PER_PAGE = 200
-
+#http://www.xinhuanet.com/mil/shijie.htm
+#http://www.xinhuanet.com/mil/zhongguo.htm
+#http://www.xinhuanet.com/mil/hangtianfangwu.htm
+#http://www.xinhuanet.com/mil/yuejunqing.htm
 # ID розділів і назви для Excel-аркушів
 CATEGORIES = {
     "11139634": "Військова аналітика",
