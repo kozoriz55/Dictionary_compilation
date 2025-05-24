@@ -89,7 +89,7 @@ def get_article_text(url):
         for sel in selectors:
             block = soup.select_one(sel)
             if block:
-                paragraphs = block.find_all(['p', 'div'])
+                paragraphs = block.find_all('p')#(['p', 'div'])
                 text = "\n".join(p.get_text(strip=True) for p in paragraphs if p.get_text(strip=True))
                 if text:
                     return text
