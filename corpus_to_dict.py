@@ -27,7 +27,7 @@ print("файл успішно записаний")
 import json
 my_dict = {}
 список_слів = chinese_words.split()#перетворює строку у список слів
-#with open("C:\\Users\\davin\\Desktop\\mil_corpus_s_.txt", 'rt', encoding='utf-8') as f2:
+#with open("mil_corpus_s_.txt", 'rt', encoding='utf-8') as f2:
 #	chinese_words = f2.read()
 for слово in список_слів:
 	my_dict.setdefault(слово, 0)
