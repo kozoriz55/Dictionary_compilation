@@ -4,7 +4,7 @@ def load_dictionary(dictionary_file):
 		dictionary = [word.strip() for word in f.readlines()]
 		#print(dictionary[:10])
 	return dictionary
-words_list = load_dictionary("C:\\Abby_System_dictionary\\LawChRu_new.txt")
+words_list = load_dictionary("junyucidian_orfo_sorted_.txt")
 # Підрахунок кількості слів за довжиною у словнику
 def count_words_by_length(word_dict):
 	word_count = {}
