@@ -43,7 +43,7 @@ def find_repeated_bigrams(words_list):
 			if bigram not in bigram_counter: bigram_counter[bigram] = 0
 			bigram_counter[bigram] += 1
 	return bigram_counter
-# Знаходимо повторюючіся біграми та їх кількість
+# Знаходимо біграми, що повторюються, та їх кількість
 repeated_bigrams = find_repeated_bigrams(words_list)
 print("Повторюючіся біграми та їх кількість:")
 for bigram, count in sorted(repeated_bigrams.items(), key=lambda x: x[1], reverse=True):
